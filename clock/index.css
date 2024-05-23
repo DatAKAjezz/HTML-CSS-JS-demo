@@ -1,0 +1,107 @@
+/* Font from fonts.google.com */
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0px;
+  margin: 0px;
+
+  height: 100%;
+  width: 100%;
+
+  font-family: "JetBrains Mono", monospace;
+
+  background-image: url("https://i.ibb.co/hVns4Sf/110554709-p0.png");
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+#time-display {
+  background-image: linear-gradient(90deg, #aeb85a, #709293);
+  color: #fff;
+
+  padding: 10px 20px;
+  font-size: 30px;
+
+  border-radius: 10px;
+}
+
+#wtch-display {
+  background-image: linear-gradient(to right, #63acd2, #78907f);
+  color: #fff;
+
+  padding: 10px 20px;
+
+  font-size: 70px;
+
+  border-radius: 10px;
+  filter: grayscale(1);
+
+  transition: filter 0.5s;
+}
+
+#break-list {
+  font-size: 20px;
+  flex: 1;
+  width: calc(100% - 100px);
+}
+
+.split-wrapper {
+  flex: 1;
+  border-left: 2px dashed #555;
+
+  padding: 10px 0;
+  height: calc(100% - 20px);
+
+  overflow-y: scroll;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+button {
+  background-color: #fff;
+  border: 2px solid;
+
+  padding: 10px 30px;
+
+  border-radius: 5px;
+  user-select: none;
+
+  transition: color 0.1s, background-color 0.2s;
+  font-family: "JetBrains Mono", monospace;
+}
+
+button:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 5px 0;
+}
+
+.list-item button {
+  padding: 0 10px;
+  font-size: 20px;
+}

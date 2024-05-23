@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <style>
+    @import url("./index.css");
+
+    .flex {
+      display: flex;
+    }
+
+    .aictr {
+      align-items: center;
+    }
+
+    .jcctr {
+      justify-content: center;
+    }
+
+    .coll {
+      flex-direction: column;
+    }
+  </style>
+  <script src="./index.js"></script>
+
+  <body onload="init()" style="gap: 30px">
+    <div class="flex aictr coll" style="gap: 10px; flex: 1">
+      <div id="time-display">00:00:00</div>
+      <div id="wtch-display">00:00:00</div>
+
+      <div>
+        <button onclick="current.startTimer(this)">Start</button>
+        <button onclick="current.pauseTimer(this)">Pause</button>
+        <button onclick="current.addList()">Split</button>
+      </div>
+    </div>
+
+    <div class="split-wrapper">
+      <div style="position: sticky; top: 0px; background: #fff">
+        <b id = "split-timer">Split time list</b>
+      </div>
+      <div id="break-list"></div>
+    </div>
+  </body>
+</html>
