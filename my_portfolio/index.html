@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel = "icon" style = "border-radius : 20px"rel = "png" href = "imgs/favicon.png">
+    <script src = "index.js"></script>
+</head>
+<body>
+    <div class = "bg-image"></div>
+    <header>
+
+        <a href = "#" class = "logo-holder">
+            <div class = "logo">Z</div>
+            <div class = "logo-text" style = "color : black;">Online Resume</div>
+        </a>
+
+        <nav>
+            <ul id = "menu">
+                <li>
+                    <a href = "#">Home</a>
+                </li>
+                <li>
+                    <a href = "#">Skills</a>
+                </li>
+                <li>
+                    <a href = "#">Projects</a>
+                </li>
+                <li>
+                    <a href = "#" class = "button">Contact Me</a>
+                </li>
+                
+            </ul>
+            <a href = "#" class = "mobile-toggle" onClick = "toggleMobileMenu()">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+                  </svg>                  
+            </a>
+        </nav>
+        
+    </header>
+    <hr style = "height: 2px; color : #555;">
+
+    <main>
+        <section class = "hero container">
+            <div class="hero-blue">
+                <div>
+                    <h1><small>Hi I'm</small>
+                        Jezz
+                    </h1>
+                    <p>I am a very random incel try to learn how to 
+                        code, my main passion is CP Code!
+                    </p>
+                    <div class = "call-to-action">
+                        <a href = "#" class = "button black">
+                            View Resume
+                        </a>
+                        <a href = "#" class = "button white">
+                            Contact Me
+                        </a>
+                    </div>
+                    <div class = "social-links">
+                        <a href = "#">
+                            <img id = "Github" src = "imgs/github.png" alt = "GitHub" style = "width: 48px; height : 48px;">
+                        </a>
+                        <a href = "#">
+                            <img id = "Twitter" src = "imgs/twittericon.jpg" alt = "GitHub" style = "width: 48px;height : 48px;">
+                        </a>
+                        <a href = "#">
+                            <img id = "Facebook" src = "./imgs/fbicon.png" alt = "Facebook" style = "width: 48px;height : 48px;">
+                        </a>
+                        <a href = "#">
+                            <img  id = "LinkedIN"src = "imgs/linkedin.png" alt = "Linked In"style = "width: 48px;height : 48px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="hero-yellow"> -->
+                <img id = "proPic"src = "imgs/profile_pic.png" alt = "_alt_appearence"> 
+            <!-- </div> -->
+        </section>
+        <hr style="height: 3px;">
+
+        <section class = "skill-bar">
+
+            <div class = "skill cpp"> C++ </div>
+            <div class = "skill html">HTM/CSS/JS</div>
+            <div class = "skill cp">CompP</div>
+            <div class="skill my-repo">
+                <a href = "#">
+                    My CP Repo
+                </a>
+            </div>
+    
+        </section>
+    </main>
+    
+    <footer></footer>
+</body>
+</html>
