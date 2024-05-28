@@ -26,7 +26,7 @@
                     <a href = "#">Home</a>
                 </li>
                 <li>
-                    <a href = "#">Skills</a>
+                    <a href = "#" onclick="navToSkills()">Skills</a>
                 </li>
                 <li>
                     <a href = "#">Projects</a>
@@ -36,7 +36,7 @@
                 </li>
                 
             </ul>
-            <a href = "#" class = "mobile-toggle" onClick = "toggleMobileMenu()">
+            <a href = "#" id = "mobile-toggle" class = "mobile-toggle" onClick = "toggleMobileMenu()">
                 <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                     <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
                   </svg>                  
@@ -47,7 +47,7 @@
     <hr style = "height: 2px; color : #555;">
 
     <main>
-        <section class = "hero container">
+        <section class = "hero hero-container">
             <div class="hero-blue">
                 <div>
                     <h1><small>Hi I'm</small>
@@ -81,23 +81,35 @@
                 </div>
             </div>
             <!-- <div class="hero-yellow"> -->
-                <img id = "proPic"src = "imgs/profile_pic.png" alt = "_alt_appearence"> 
+            <img id = "proPic"src = "imgs/saitama.png" alt = "_alt_appearence"> 
             <!-- </div> -->
         </section>
         <hr style="height: 3px;">
 
-        <section class = "skill-bar">
+        <section class = "skills-wrapper" style = "border : 2px solid" id="skills-wrapper">
 
-            <div class = "skill cpp"> C++ </div>
-            <div class = "skill html">HTM/CSS/JS</div>
-            <div class = "skill cp">CompP</div>
-            <div class="skill my-repo">
+            <div class = "skill skill1 cpp"> C++ </div>
+            <div class = "skill skill2 html">HTM/CSS/JS</div>
+            <div class = "skill skill3 cp">CompP</div>
+            <div class="skill skill4 my-repo">
                 <a href = "#">
                     My CP Repo
                 </a>
             </div>
-    
         </section>
+        <!--PROJECTS-->
+        <section class = "projects-wrapper" style = "border : 2px solid" id = "project-wrapper">
+            
+            <img id = "projectPic pic1" src = "imgs/prj1.jpg" alt = "pic1">
+            <img id = "projectPic pic2" src = "imgs/prj2.jpg" alt = "pic2">
+            <img id = "projectPic pic3" src = "imgs/prj3.jpg" alt = "pic3">
+            <img id = "projectPic pic4" src = "imgs/prj4.gif" alt = "pic4">
+            
+        </section>
+        
+        <!-- END-SECTION -->
+        <section class = "end-section" style = "height: 1000px;"></section>
+
     </main>
     
     <footer></footer>
